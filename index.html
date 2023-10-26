@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="box2">We are learning jQuery</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+      //YOu can write jquery code here
+
+      // Check if the page is loaded
+
+      //$ is reference to jquery object
+      //1. ()();
+
+      //Highest execution Priority
+      (function ($) {
+        //alert('Page Loaded Success 1');
+
+        //$(selector).action()
+
+        //Setting the content
+        $("div#box").html("Hello Good Morning"); // SET
+
+        //Getting the content
+        let x = $("#box2").html();
+
+        alert(x);
+      })(jQuery);
+
+      /*  $(document).ready(function($){
+                alert('Hurrey ')
+            });
+
+            //2. jQuery();
+
+            jQuery(function($){
+                alert('Page loaded succesfully 2');
+            }); */
+
+      //$(selector).action()
+
+      //3.
+    </script>
+  </body>
+</html>

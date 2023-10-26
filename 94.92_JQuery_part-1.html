@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>94.92_JQuery_part-1</title>
+    <!-- JQuery cdn linkage -->
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="box2">We are going the marketing</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      //You can write jquery code here
+
+      //Check if the page is loaded
+
+      //1.()();
+      //Highest execution Priority
+      (function ($) {
+        //$(selector).action
+        //SET the value
+        $("div#box").html("hello good morning"); //SET
+
+        //Getting the content
+        var x = $("div#box2").html();
+        console.log(x);
+      })(jQuery);
+
+      //$ => dollar is reference of jquery
+      //2.JQuery();
+      jQuery(function ($) {
+        alert("Page loaded successfully 2");
+      });
+
+      //3.JQuery
+
+      $(document).ready(function ($) {
+        alert("page loaded successfully 3");
+      });
+    </script>
+  </body>
+</html>

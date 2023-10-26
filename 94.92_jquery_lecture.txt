@@ -1,0 +1,6 @@
+jQuery
+
+How to use the query?
+
+1. JQuery Local Linking (Local Download)
+2. JQuery CDN
